@@ -14,6 +14,8 @@ if (!app.Environment.IsDevelopment())
     Console.WriteLine("Test zatwierdzenia zmiany");
 }
 
+
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
@@ -24,3 +26,9 @@ app.UseAuthorization();
 app.MapRazorPages();
 
 app.Run();
+
+public class Book
+{
+    public string Title { get; set; }
+    public string Description { get; set; }
+}
